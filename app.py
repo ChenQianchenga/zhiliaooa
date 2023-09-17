@@ -3,7 +3,7 @@ from flask_migrate import Migrate
 import config
 from blueprints.auth import auth_bp
 from blueprints.qa import qa_bp
-from exts import db
+from exts import db, mail
 from models import UserModel
 
 app = Flask(__name__)
@@ -11,6 +11,7 @@ app = Flask(__name__)
 app.config.from_object(config)
 # 先创建再绑定
 db.init_app(app)
+mail.init_app(app)
 
 # 注册蓝本
 app.register_blueprint(qa_bp)
@@ -20,4 +21,4 @@ migrate = Migrate(app, db)
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
