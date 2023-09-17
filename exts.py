@@ -7,5 +7,7 @@
 # Date:2023/9/10  20:22
 # --------------------------------------------------------------------------
 from flask_sqlalchemy import SQLAlchemy
+from flask_mail import Mail
 
 db = SQLAlchemy()
+mail = Mail()
