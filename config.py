@@ -6,6 +6,7 @@
 # Author:ChenQiancheng
 # Date:2023/9/10  20:20
 # --------------------------------------------------------------------------
+SECRET_KEY = "qiancheng"
 # 数据库配置信息
 HOSTNAME = "127.0.0.1"
 PORT = "3306"
@@ -19,6 +20,6 @@ SQLALCHEMY_DATABASE_URI = DB_URI
 MAIL_SERVER = "smtp.qq.com"
 MAIL_USE_SSL = True
 MAIL_PORT = 465
-MAIL_USERNAME = '980938541@qq.com'
-MAIL_PASSWORD = "khxvtdymfvqlbcjc"
-MAIL_DEFAULT_SENDER = '980938541@qq.com'
+MAIL_USERNAME = "980938541@qq.com"
+MAIL_PASSWORD = "jqmssmqamwlfbdaj"
+MAIL_DEFAULT_SENDER = "980938541@qq.com"

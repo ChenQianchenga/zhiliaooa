@@ -5,13 +5,15 @@ name = "pypi"
 
 [packages]
 flask = "*"
-flask_sqlalchemy = "*"
 sqlalchemy = "==1.4.23"
 flask-migrate = "*"
 pymysql = "*"
 python-dotenv = "==0.12.0"
 flask-wtf = "*"
 email-validator = "*"
+flask-sqlalchemy = "*"
+markupsafe = "*"
+cryptography = "*"
 
 [dev-packages]
 
